@@ -1,0 +1,5 @@
+__pycache__/
+wandb/
+pruned_models/
+data/
+.venv/

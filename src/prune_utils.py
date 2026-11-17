@@ -20,11 +20,14 @@ MODEL_TO_N_LAYERS = {
     "meta-llama/Llama-3.1-8B-Instruct": 32,
     "meta-llama/Llama-3.1-8B": 32,
     "Qwen/Qwen2.5-14B-Instruct": 48,
+    "Qwen/Qwen2.5-7B-Instruct": 28,
+    "Qwen/Qwen2.5-7B-Instruct": 28,
 }
 MODEL_TO_COMPONENTS = {
     "meta-llama/Llama-3.1-8B-Instruct": ['mlp.down_proj', 'mlp.gate_proj', 'mlp.up_proj', 'self_attn.k_proj', 'self_attn.q_proj', 'self_attn.v_proj', 'self_attn.o_proj'],
     "meta-llama/Llama-3.1-8B": ['mlp.down_proj', 'mlp.gate_proj', 'mlp.up_proj', 'self_attn.k_proj', 'self_attn.q_proj', 'self_attn.v_proj', 'self_attn.o_proj'],
-    "Qwen/Qwen2.5-14B-Instruct": ['mlp.down_proj', 'mlp.gate_proj', 'mlp.up_proj', 'self_attn.k_proj', 'self_attn.q_proj', 'self_attn.v_proj', 'self_attn.o_proj']
+    "Qwen/Qwen2.5-14B-Instruct": ['mlp.down_proj', 'mlp.gate_proj', 'mlp.up_proj', 'self_attn.k_proj', 'self_attn.q_proj', 'self_attn.v_proj', 'self_attn.o_proj'],
+    "Qwen/Qwen2.5-7B-Instruct": ['mlp.down_proj', 'mlp.gate_proj', 'mlp.up_proj', 'self_attn.k_proj', 'self_attn.q_proj', 'self_attn.v_proj', 'self_attn.o_proj']
 }
 
 class ActLinear(nn.Module):

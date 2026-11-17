@@ -9,7 +9,7 @@ from eval_utils import generate_responses_for_harmful_requests, \
     eval_zero_shot, eval_triviaqa, finetuning_attack, generate_responses_financial_advice, generate_responses_for_alpaca, \
     judge_for_alpaca, judge_for_safety, coherency_judge, cohere_explanation_judge, eval_ppl_wikitext
 from prune_utils import prune_attribution_score, prune_attribution_score_set_difference, check_sparsity, \
-    prune_from_indices, find_intersection_indices, log_pruning_distribution, prune_attribution_score_set_difference_with_refusal
+    prune_from_indices, find_intersection_indices, log_pruning_distribution
 
 
 def float_or_str(value):
