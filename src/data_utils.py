@@ -136,12 +136,6 @@ def get_emergent_misalignment(args, nsamples, seed, tokenizer, model_name, data_
                 "train": f"../data/em_prune_data/{data_name.replace('_selfgen', '')}_Qwen2.5-7B-Instruct_selfgen.csv"}
         else:
             data_files = {"train": f"../data/em_prune_data/{data_name}_Qwen2.5.csv"}
-    elif "Qwen2.5-7B-Instruct" in model_name:
-        if "selfgen" in data_name:
-            data_files = {
-                "train": f"../data/em_prune_data/{data_name.replace('_selfgen', '')}_Qwen2.5-7B-Instruct_selfgen.csv"}
-        else:
-            data_files = {"train": f"../data/em_prune_data/{data_name}_Qwen2.5.csv"}
     elif "Qwen2.5-14B-Instruct" in model_name:
         if "selfgen" in data_name:
             data_files = {
